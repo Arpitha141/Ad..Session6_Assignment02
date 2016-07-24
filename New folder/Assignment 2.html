@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>jQuery</title>
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+</head>
+<body>
+<form>
+   <input id="field1" type="text" value="Field 1">
+   <input id="field2" type="text" value="Field 2">
+ </form>
+
+ <p>Write something in the input Field 1, and then click outside the field to check lose focus.</p>  
+
+ <script type="text/javascript">
+ $(document).ready(function(){
+ 	$("#field1").blur(function() {  
+  alert( "Lose focus from Field1" );  
+}); 
+ 	});
+ </script>
+
+</body>
+</html>
